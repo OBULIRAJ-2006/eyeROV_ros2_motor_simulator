@@ -1,0 +1,13 @@
+# Example values only. They are assumptions for a small differential-drive
+# test platform, not EyeROV hardware specifications.
+# Use decimal points (e.g. 3000.0): the parameters are doubles and YAML
+# integers are rejected.
+motor_simulator:
+  ros__parameters:
+    wheel_radius_m: 0.05            # m
+    track_width_m: 0.30             # m, distance between left and right wheel centres
+    gear_ratio: 10.0                # motor-shaft revolutions per wheel revolution
+    max_motor_rpm: 3000.0           # motor-shaft RPM limit
+    max_acceleration_rpm_s: 1500.0  # motor-shaft RPM per second
+    update_rate_hz: 50.0            # simulation and publish rate (read-only at runtime)
+    command_timeout_s: 0.5          # motors ramp to zero if cmd_vel is older than this
