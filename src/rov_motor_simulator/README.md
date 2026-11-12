@@ -101,7 +101,7 @@ The archived test source covers velocity conversion, direction, combined movemen
 
 ## Verification summary
 
-The user's reported WSL2 checks were: successful build, six passing tests, successful simulator launch, exposed ROS 2 topics, and observed RPM telemetry for forward motion and turning. See `TESTING_AND_VERIFICATION.md` for the scope and evidence checklist.
+The user's reported WSL2 checks were: successful build, six passing tests, successful simulator launch, exposed ROS 2 topics, and observed RPM telemetry for forward motion and turning.
 
 ## Assumptions and limitations
 
