@@ -97,11 +97,11 @@ colcon test --packages-select rov_motor_simulator --event-handlers console_direc
 colcon test-result --verbose
 ```
 
-The archived test source covers velocity conversion, direction, combined movement, gear ratio, saturation, acceleration-limited response, timeout logic, and parameter validation. The verification record included with this package reports six tests passing in the user's WSL2 environment. This package has not been independently rebuilt or retested while preparing the submission materials.
+The test source contains six cases: zero velocity, forward motion, combined linear and angular motion, RPM saturation, acceleration-limited response, and command timeout. In my earlier WSL2 run, the test summary reported six tests passing. I have not rerun the ROS 2 build or test suite for this update.
 
 ## Verification summary
 
-The user's reported WSL2 checks were: successful build, six passing tests, successful simulator launch, exposed ROS 2 topics, and observed RPM telemetry for forward motion and turning.
+In my WSL2 run, the package built and launched, the ROS 2 topics appeared, and I observed RPM telemetry for forward and turning commands. The test summary from that run reported six tests passing.
 
 ## Assumptions and limitations
 
